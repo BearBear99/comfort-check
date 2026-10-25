@@ -26,6 +26,24 @@ html, body { margin: 0; min-height: 100%; background: var(--cream-bg); font-fami
   margin: 0 auto;
   padding: 40px 20px;
 }
+@media (min-width: 701px) {
+  .wrap {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 28px rgba(47, 93, 87, 0.12), 0 2px 8px rgba(0,0,0,0.06);
+    margin-top: 32px;
+    margin-bottom: 32px;
+    overflow: hidden;
+  }
+  .home .wrap {
+    background: transparent;
+    box-shadow: none;
+    margin-top: 0;
+  }
+  .home .card {
+    box-shadow: 0 8px 28px rgba(47, 93, 87, 0.12), 0 2px 8px rgba(0,0,0,0.06);
+  }
+}
 @media (max-width: 700px) {
   .wrap { padding: 0; max-width: 100%; }
   .screen { padding-bottom: 90px; }
