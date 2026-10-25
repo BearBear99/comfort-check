@@ -78,6 +78,11 @@ html, body { margin: 0; min-height: 100%; background: var(--cream-bg); font-fami
 }
 .btn.secondary { background: var(--sand); color: var(--ink); }
 .btn:hover { filter: brightness(1.05); }
+.home-note {
+  margin: 16px 0 0;
+  font-size: 12px;
+  color: #7a7a7a;
+}
 .btn:active { transform: scale(0.98); }
 
 /* CAPTCHA screens */
@@ -205,6 +210,7 @@ html, body { margin: 0; min-height: 100%; background: var(--cream-bg); font-fami
           <h2>Get Started</h2>
           <p>Please verify your comfort to continue.</p>
           <button class="btn" data-go="s1">🪑 I’m a human</button>
+          <p class="home-note">No camera · No account · Answers not stored</p>
         </div>
       </div>
     </div>
@@ -221,7 +227,7 @@ html, body { margin: 0; min-height: 100%; background: var(--cream-bg); font-fami
         <p class="hint">If none look comfortable, click SKIP.</p>
         <div class="grid" id="grid1"></div>
         <div class="footer">
-          <span class="note">No camera · No account · Answers not stored</span>
+          <span class="note"></span>
           <button class="skip" data-go="s2">SKIP</button>
         </div>
       </div>
@@ -239,7 +245,7 @@ html, body { margin: 0; min-height: 100%; background: var(--cream-bg); font-fami
         <p class="hint">More than one square can be right. Click SKIP if none apply.</p>
         <div class="grid" id="grid2"></div>
         <div class="footer">
-          <span class="note">No camera · No account · Answers not stored</span>
+          <span class="note"></span>
           <button class="skip" data-go="fail">SKIP</button>
         </div>
       </div>
@@ -259,10 +265,7 @@ html, body { margin: 0; min-height: 100%; background: var(--cream-bg); font-fami
           This chair is for sitting.<br>
           The rest of the room is still a display.
         </div>
-        <div class="small">
-          No camera. No account. Answers are not stored.<br>
-          After 15 November the screen and sign will be disassembled.
-        </div>
+        
         <div class="xmark">✕</div>
         <div class="actions">
           <button class="btn" data-go="sit">Sit</button>
@@ -285,10 +288,7 @@ html, body { margin: 0; min-height: 100%; background: var(--cream-bg); font-fami
           This chair is here to be used.<br>
           Comfort happens outside the screen.
         </div>
-        <div class="small">
-          No camera. No account. Answers are not stored.<br>
-          After 15 November the screen and sign will be disassembled.
-        </div>
+        
         <div class="arrow"></div>
         <div style="text-align:center; margin-top: 20px;">
           <button class="btn" data-go="home">Back to home</button>
@@ -310,10 +310,7 @@ html, body { margin: 0; min-height: 100%; background: var(--cream-bg); font-fami
           Comfort is your choice.<br>
           Explore at your own pace.
         </div>
-        <div class="small">
-          No camera. No account. Answers are not stored.<br>
-          After 15 November the screen and sign will be disassembled.
-        </div>
+        
         <div class="sofa"></div>
         <div style="text-align:center; margin-top: 20px;">
           <button class="btn" data-go="home">Back to home</button>
