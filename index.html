@@ -236,28 +236,12 @@ html, body { margin: 0; min-height: 100%; background: var(--cream-bg); font-fami
         <div class="grid" id="grid1"></div>
         <div class="footer">
           <span class="note"></span>
-          <button class="skip" data-go="s2">SKIP</button>
+          <button class="skip" data-go="fail">SKIP</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="screen" id="s2">
-    <div class="wrap">
-      <div class="bar">
-        <p class="tag">FESTIVAL EXHIBIT · NOT FOR SALE</p>
-        <h2>Where to sit?</h2>
-        <p>Select all squares where sitting is permitted.</p>
-      </div>
-      <div class="body">
-        <p class="hint">More than one square can be right. Click SKIP if none apply.</p>
-        <div class="grid" id="grid2"></div>
-        <div class="footer">
-          <span class="note"></span>
-          <button class="skip" data-go="fail">SKIP</button>
-        </div>
-      </div>
-    </div>
   </div>
 
   <div class="screen" id="fail">
@@ -269,15 +253,12 @@ html, body { margin: 0; min-height: 100%; background: var(--cream-bg); font-fami
       </div>
       <div class="body">
         <div class="msg">
-          Comfort is not a grid.<br>
-          This chair is for sitting.<br>
-          The rest of the room is still a display.
+          Comfort can’t be checked on a screen.<br>
+          Go try the furniture for yourself.
         </div>
-        
         <div class="xmark">✕</div>
-        <div class="actions">
-          <button class="btn" data-go="sit">Sit</button>
-          <button class="btn secondary" data-go="walk">Keep walking</button>
+        <div style="text-align:center; margin-top: 20px;">
+          <button class="btn" data-go="home">Go try the furniture</button>
         </div>
       </div>
     </div>
