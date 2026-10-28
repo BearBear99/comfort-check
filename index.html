@@ -85,6 +85,16 @@ html, body { margin: 0; min-height: 100%; background: var(--cream-bg); font-fami
 }
 .btn:active { transform: scale(0.98); }
 
+@media (max-width: 700px) {
+  .btn, .skip {
+    min-height: 48px;
+    padding: 16px 28px;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+}
+
+
 /* CAPTCHA screens */
 .bar {
   background: var(--teal);
@@ -337,10 +347,20 @@ function go(id) {
   window.scrollTo(0,0);
 }
 
-document.addEventListener("click", function(e) {
+function handleGo(e) {
   const btn = e.target.closest("[data-go]");
-  if (btn) go(btn.getAttribute("data-go"));
-});
+  if (!btn) return;
+  e.preventDefault();
+  go(btn.getAttribute("data-go"));
+}
+document.addEventListener("click", handleGo);
+document.addEventListener("touchend", function(e) {
+  const btn = e.target.closest("[data-go]");
+  if (btn) {
+    e.preventDefault();
+    go(btn.getAttribute("data-go"));
+  }
+}, {passive: false});
 </script>
 </body>
 </html>
