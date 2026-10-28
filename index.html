@@ -69,9 +69,6 @@ html, body { margin: 0; height: 100%; background: var(--cream-bg); font-family: 
 .message h2 { color: var(--teal); font-size: 32px; margin: 0 0 12px; }
 .message p { color: var(--ink); font-size: 18px; margin: 0 0 16px; line-height: 1.5; }
 .xmark { width: 120px; height: 120px; border-radius: 50%; background: #b7c4b3; margin: 24px auto; display: flex; align-items: center; justify-content: center; font-size: 64px; color: #fff; }
-.arrow { width: 180px; height: 60px; margin: 24px auto; background: #b7c4b3; clip-path: polygon(0 22%, 68% 22%, 68% 0, 100% 50%, 68% 100%, 68% 78%, 0 78%); }
-.actions { display: flex; gap: 12px; justify-content: center; margin-top: 24px; flex-wrap: wrap; }
-.actions .btn { min-width: 140px; }
 </style>
 </head>
 <body>
@@ -122,27 +119,7 @@ html, body { margin: 0; height: 100%; background: var(--cream-bg); font-family: 
         <div class="message">
           <p>Comfort is not a grid.<br>This chair is for sitting.<br>The rest of the room is still a display.</p>
           <div class="xmark">✕</div>
-          <div class="actions">
-            <button class="btn" onclick="go('sit')">Sit</button>
-            <button class="btn secondary" onclick="go('home')">Keep walking</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="sit" class="screen">
-    <div class="wrap">
-      <div class="bar">
-        <p class="tag">FESTIVAL EXHIBIT · NOT FOR SALE</p>
-        <h2>Take a seat</h2>
-        <p>Get comfortable.</p>
-      </div>
-      <div class="body">
-        <div class="message">
-          <p>No verification needed.<br>This chair is here to be used.<br>Comfort happens outside the screen.</p>
-          <div class="arrow"></div>
-          <button class="btn" onclick="go('home')">Back to home</button>
+          <button class="btn" onclick="go('home')">Go try the furniture</button>
         </div>
       </div>
     </div>
