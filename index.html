@@ -38,7 +38,6 @@ html, body { margin: 0; height: 100%; background: var(--cream-bg); font-family: 
 .card p { color: var(--ink); margin: 0 0 22px; font-size: 16px; }
 .btn { display: inline-block; background: var(--teal); color: #fff; border: 0; border-radius: 8px; padding: 14px 26px; font-size: 17px; font-weight: 600; cursor: pointer; }
 .btn:hover { filter: brightness(1.05); }
-.home-note { margin: 16px 0 0; font-size: 12px; color: #7a7a7a; }
 .btn:active { transform: scale(0.98); }
 @media (max-width: 700px) {
   .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 16px 28px; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
@@ -75,13 +74,12 @@ html, body { margin: 0; height: 100%; background: var(--cream-bg); font-family: 
   <div id="home" class="screen active">
     <div class="wrap home">
       <div class="home-inner">
-        <p class="sub">Comfort Check</p>
-        <h1>Are you<br>human?</h1>
+        <p class="sub">Welcome to</p>
+        <h1>Comfort Check</h1>
         <div class="card">
-          <h2>Quick check</h2>
-          <p>Before you sit, we need to confirm you’re not a bot.</p>
+          <h2>Get Started</h2>
+          <p>Please verify your comfort to continue.</p>
           <button class="btn" onclick="go('s1')">🪑 I’m a human</button>
-          <p class="home-note">No personal data collected. Just a quick look at what looks comfortable.</p>
         </div>
       </div>
     </div>
