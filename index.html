@@ -56,7 +56,7 @@ html, body { margin: 0; height: 100%; background: var(--cream-bg); font-family: 
 .tile { aspect-ratio: 1; border-radius: 6px; overflow: hidden; position: relative; cursor: pointer; border: 3px solid transparent; background: #ddd; }
 .tile img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .tile.selected { border-color: var(--teal); }
-.tile.selected::after { content: "✓"; position: absolute; top: 8px; right: 8px; background: var(--teal); color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; }
+.tile.selected::after { content: "\u2713"; position: absolute; top: 8px; right: 8px; background: var(--teal); color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; }
 .footer { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; padding-top: 12px; border-top: 1px solid #eee; }
 .footer .note { font-size: 12px; color: #7a7a7a; }
 .footer-btns { display: flex; gap: 8px; }
@@ -118,15 +118,15 @@ html, body { margin: 0; height: 100%; background: var(--cream-bg); font-family: 
 </div>
 <script>
 const S1 = [
-  "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=400",
-  "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
-  "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
-  "https://images.unsplash.com/photo-1592078615290-033ee584e267?w=400",
-  "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=400",
-  "https://images.unsplash.com/photo-1519947486511-4614d0b8e8e5?w=400",
-  "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=400",
-  "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
-  "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=400"
+  "1.png",
+  "2.png",
+  "3.png",
+  "4.png",
+  "5.png",
+  "6.png",
+  "7.png",
+  "8.png",
+  "9.png"
 ];
 function buildGrid(id, srcs) {
   const el = document.getElementById(id);
