@@ -342,6 +342,13 @@ function go(id) {
   const t = document.getElementById(id);
   if (t) t.classList.add("active");
   window.scrollTo(0,0);
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  setTimeout(() => {
+    window.scrollTo(0,0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }, 50);
 }
 
 
