@@ -104,7 +104,7 @@ html, body { margin: 0; height: 100%; background: var(--cream-bg); font-family: 
           <span class="note">Comfort cannot be fully verified on screen.</span>
           <div class="footer-btns">
             <button class="skip secondary" onclick="go('fail')">SKIP</button>
-            <button class="skip" onclick="go('fail')">CONFIRM</button>
+            <button class="skip" onclick="confirmSelection()">CONFIRM</button>
           </div>
         </div>
       </div>
@@ -173,6 +173,14 @@ function buildGrid(id, srcs) {
     d.onclick = () => d.classList.toggle("selected");
     el.appendChild(d);
   });
+}
+function confirmSelection() {
+  const selected = document.querySelectorAll("#grid1 .tile.selected");
+  if (selected.length === 0) {
+    alert("Please select at least one image that looks comfortable.");
+    return;
+  }
+  go("fail");
 }
 function go(id) {
   document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
